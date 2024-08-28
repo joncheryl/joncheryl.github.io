@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beautiful Links</title>
+  <title>Wasatch Avalanche Data Analysis</title>
   <style>
     body {
       font-family: sans-serif;
       margin: 0;
+      display: flex; /* Make the body a flex container */
+      min-height: 100vh; /* Ensure content fills the viewport height */
+      align-items: center; /* Center content vertically */
+      justify-content: center; /* Center content horizontally */
       background-color: #f0f0f0;
     }
-    .link-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh; /* Ensures content fills the viewport height */
+    .content {
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px; /* Space between text and links */
     }
     a {
       text-decoration: none;
@@ -23,6 +27,7 @@
       border: 1px solid #ccc;
       border-radius: 5px;
       margin: 0 10px;
+      display: inline-block; /* Allow line breaks for long link text */
     }
     a:hover {
       background-color: #ddd;
@@ -30,9 +35,10 @@
   </style>
 </head>
 <body>
-  <div class="link-container">
-    <a href="https://joncheryl.github.io/prelim_study.html">Exploratory Analysis</a>
-    <a href="https://joncheryl.github.io/avy_svm.html">SVM Model</a>
+  <div class="content">
+    <h2>Wasatch Avalanche Data Analysis</h2>
+    <a href="https://joncheryl.github.io/prelim_study.html">Preliminary Study</a>
+    <a href="https://joncheryl.github.io/avy_svm.html">AVY SVM Page</a>
   </div>
 </body>
 </html>
