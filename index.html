@@ -5,62 +5,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>John Sherrill</title>
   <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      display: flex; /* Make the body a flex container */
-      min-height: 100vh; /* Ensure content fills the viewport height */
-      align-items: center; /* Center content vertically */
-      justify-content: center; /* Center content horizontally */
-      background-color: #f0f0f0;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      color: #333;
+      flex-direction: column; /* Stack the elements vertically */
     }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      color: #3e4e5e;
+    }
+
+    .header h2 {
+      font-size: 1.7rem;
+      color: #555;
+      font-weight: normal;
+      margin: 40px;
+    }
+
+    .header a {
+      text-decoration: none;
+      color: #0077cc;
+      font-size: 1rem;
+      margin: 10px 0;
+    }
+
+    .header a:hover {
+      color: #005fa3;
+    }
+
     .content {
       text-align: center;
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
     }
-    h1 {
-      margin-top: 20px;
-      margin-bottom: 20px;
+
+    .content h2 {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 25px;
+      font-weight: normal;
     }
-    h2 {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-    hr {
-      margin: 50px 0px;
-    }
-    a.blocks {
+
+    .content a {
       text-decoration: none;
-      color: #000;
+      color: #0077cc;
+      font-size: 1rem;
       padding: 10px 20px;
-      border: 1px solid #ccc;
       border-radius: 5px;
-      margin: 0 10px;
-      display: inline-block; /* Allow line breaks for long link text */
+      border: 2px solid #0077cc;
+      display: inline-block;
+      margin: 10px 0;
+      transition: background-color 0.3s, color 0.3s;
     }
-    a:hover {
-      background-color: #ddd;
+
+    .content a:hover {
+      background-color: #0077cc;
+      color: white;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 40px 0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+
+      .header h2 {
+        font-size: 1rem;
+      }
+
+      .content {
+        padding: 20px;
+      }
     }
 
   </style>
 </head>
 <body>
-  <div class="content">
 
+  <!-- Header section: John Sherrill, Data Analysis Portfolio, email, github -->
+  <div class="header">
     <h1>John Sherrill</h1>
-    <h2>- Data Analysis Portfolio -</h2>
     <div><a href="mailto:prof.sherrill@gmail.com">prof.sherrill@gmail.com</a></div>
     <div><a href="https://github.com/joncheryl">github.com/joncheryl</a></div>
-    <hr>
+    <h2>Data Analysis Portfolio:</h2>
+  </div>
 
+  <!-- Main content section -->
+  <div class="content">
     <h2>Education Spending Analysis</h2>
-    <a href="https://raw.githack.com/joncheryl/ed/main/state_level.html" class="blocks">Part 1: Utah Preliminary Study</a>
-    <a href="https://raw.githack.com/joncheryl/ed/main/state_level_spending.html" class="blocks">Part 2: Utah Expenditure Analysis</a>
+    <a href="https://raw.githack.com/joncheryl/ed/main/state_level.html">Part 1: Utah Preliminary Study</a>
+    <a href="https://raw.githack.com/joncheryl/ed/main/state_level_spending.html">Part 2: Utah Expenditure Analysis</a>
 
     <hr>
 
     <h2>Wasatch Avalanche Data Analysis</h2>
-    <a href="https://joncheryl.github.io/prelim_study.html" class="blocks">Preliminary Study</a>
-    <a href="https://joncheryl.github.io/avy_svm.html" class="blocks">SVM Model</a>
+    <a href="https://joncheryl.github.io/prelim_study.html">Preliminary Study</a>
+    <a href="https://joncheryl.github.io/avy_svm.html">SVM Model</a>
   </div>
+
 </body>
 </html>
