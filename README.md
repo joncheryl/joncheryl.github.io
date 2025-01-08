@@ -1,2 +1,2 @@
-# gussiewussie.github.io
-## website schtuff
+# [joncheryl.github.io](joncheryl.github.io)
+Data Analysis Portfolio
