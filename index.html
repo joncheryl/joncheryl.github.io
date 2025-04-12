@@ -70,7 +70,7 @@
       font-weight: normal;
     }
 
-    .content a {
+    .project-link {
       text-decoration: none;
       color: #0077cc;
       font-size: 1rem;
@@ -78,13 +78,35 @@
       border-radius: 5px;
       border: 2px solid #0077cc;
       display: inline-block;
-      margin: 10px 0;
+      margin: 10px 0 5px 0;
       transition: background-color 0.3s, color 0.3s;
     }
 
-    .content a:hover {
+    .project-link:hover {
       background-color: #0077cc;
       color: white;
+    }
+
+    .project-item {
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .skill-tag {
+      background-color: #eef5fd;
+      color: #0077cc;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      display: inline-block;
+      border: 1px solid rgba(0, 119, 204, 0.3);
     }
 
     hr {
@@ -106,8 +128,16 @@
       .content {
         padding: 20px;
       }
+      
+      .skills {
+        gap: 5px;
+      }
+      
+      .skill-tag {
+        font-size: 0.75rem;
+        padding: 3px 8px;
+      }
     }
-
   </style>
 </head>
 <body>
@@ -128,14 +158,57 @@
   <!-- Main content section -->
   <div class="content">
     <h2>Education Spending Analysis</h2>
-    <a href="https://raw.githack.com/joncheryl/ed/main/state_level.html">Part 1: Utah Preliminary Study</a>
-    <a href="https://raw.githack.com/joncheryl/ed/main/state_level_spending.html">Part 2: Utah Expenditure Analysis</a>
+    
+    <div class="project-item">
+      <a href="https://raw.githack.com/joncheryl/ed/main/state_level_eda.html" class="project-link">State-Level Analysis</a>
+      <div class="skills">
+        <span class="skill-tag">Tableau</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">Linear Models</span>
+      </div>
+    </div>
+    
+    <div class="project-item">
+      <a href="https://raw.githack.com/joncheryl/ed/main/state_level.html" class="project-link">Part 1: Utah Preliminary Study</a>
+      <div class="skills">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">Plotly (visualizations)</span>
+      </div>
+    </div>
+    
+    <div class="project-item">
+      <a href="https://raw.githack.com/joncheryl/ed/main/state_level_spending.html" class="project-link">Part 2: Utah Expenditure Analysis</a>
+      <div class="skills">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">Plotly (visualizations)</span>
+      </div>
+    </div>
 
     <hr>
 
     <h2>Wasatch Avalanche Data Analysis</h2>
-    <a href="https://joncheryl.github.io/prelim_study.html">Preliminary Study</a>
-    <a href="https://joncheryl.github.io/avy_svm.html">SVM Model</a>
+    
+    <div class="project-item">
+      <a href="https://joncheryl.github.io/prelim_study.html" class="project-link">Preliminary Study</a>
+      <div class="skills">
+        <span class="skill-tag">Tableau</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Python</span>
+      </div>
+    </div>
+    
+    <div class="project-item">
+      <a href="https://joncheryl.github.io/avy_svm.html" class="project-link">SVM Model</a>
+      <div class="skills">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">sklearn package</span>
+      </div>
+    </div>
   </div>
 
 </body>
