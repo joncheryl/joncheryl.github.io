@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +23,8 @@
       min-height: 100vh;
       padding: 20px;
       color: #333;
-      flex-direction: column; /* Stack the elements vertically */
+      flex-direction: column;
+      /* Stack the elements vertically */
     }
 
     .header {
@@ -88,7 +90,11 @@
     }
 
     .project-item {
-      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* centers children horizontally */
+      margin-bottom: 10px;
+      text-align: center; /* optional: center text inside children */
     }
 
     .skills {
@@ -96,7 +102,8 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 8px;
-      margin-bottom: 15px;
+      margin-bottom: 0px;
+      margin-top: 5px;
     }
 
     .skill-tag {
@@ -115,6 +122,28 @@
       margin: 20px 0;
     }
 
+    .content-columns {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .content-column {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      flex: 1 1 300px;
+      max-width: 500px;
+    }
+
+    .content-column h2 {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 5px;
+    }
+
     /* Responsive adjustments */
     @media (max-width: 600px) {
       .header h1 {
@@ -128,11 +157,11 @@
       .content {
         padding: 20px;
       }
-      
+
       .skills {
         gap: 5px;
       }
-      
+
       .skill-tag {
         font-size: 0.75rem;
         padding: 3px 8px;
@@ -140,76 +169,102 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Header section: John Sherrill, Data Analysis Portfolio, email, github -->
   <div class="header">
     <h1>John Sherrill</h1>
     <hr>
-    <div><a href="mailto:prof.sherrill@gmail.com">prof.sherrill@gmail.com</a></div>
-    <br>
-    <div><a href="https://github.com/joncheryl">github.com/joncheryl</a></div>
-    <br>
+    <a href="mailto:prof.sherrill@gmail.com">prof.sherrill@gmail.com</a>
+    |
+    <a href="https://github.com/joncheryl">github.com/joncheryl</a>
+    |
     <a href="https://raw.githack.com/joncheryl/joncheryl.github.io/master/resume.pdf">Resume</a>
     <hr>
     <h2>Data Analysis Portfolio:</h2>
   </div>
 
   <!-- Main content section -->
-  <div class="content">
-    <h2>Education Spending Analysis</h2>
-    
-    <div class="project-item">
-      <a href="https://raw.githack.com/joncheryl/ed/main/state_level_eda.html" class="project-link">State-Level Analysis</a>
-      <div class="skills">
-        <span class="skill-tag">Tableau</span>
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">Pandas</span>
-        <span class="skill-tag">Linear Models</span>
+  <div class="content-columns">
+    <div class="content-column">
+      <h2>Education Spending Analysis</h2>
+
+      <div class="project-item">
+        <a href="https://raw.githack.com/joncheryl/ed/main/state_level_eda.html" class="project-link">State-Level
+          Analysis</a>
+        <div class="skills">
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">Linear Models</span>
+        </div>
       </div>
-    </div>
-    
-    <div class="project-item">
-      <a href="https://raw.githack.com/joncheryl/ed/main/state_level.html" class="project-link">Part 1: Utah Preliminary Study</a>
-      <div class="skills">
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">Pandas</span>
-        <span class="skill-tag">Plotly (visualizations)</span>
+
+      <div class="project-item">
+        <a href="https://raw.githack.com/joncheryl/ed/main/state_level.html" class="project-link">Part 1: Utah
+          Preliminary Study</a>
+        <div class="skills">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">Plotly (visualizations)</span>
+        </div>
       </div>
-    </div>
-    
-    <div class="project-item">
-      <a href="https://raw.githack.com/joncheryl/ed/main/state_level_spending.html" class="project-link">Part 2: Utah Expenditure Analysis</a>
-      <div class="skills">
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">Pandas</span>
-        <span class="skill-tag">Plotly (visualizations)</span>
+
+      <div class="project-item">
+        <a href="https://raw.githack.com/joncheryl/ed/main/state_level_spending.html" class="project-link">Part 2: Utah
+          Expenditure Analysis</a>
+        <div class="skills">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">Plotly (visualizations)</span>
+        </div>
       </div>
     </div>
 
-    <hr>
+    <!-- <hr> -->
 
-    <h2>Wasatch Avalanche Data Analysis</h2>
-    
-    <div class="project-item">
-      <a href="https://joncheryl.github.io/prelim_study.html" class="project-link">Preliminary Study</a>
-      <div class="skills">
-        <span class="skill-tag">Tableau</span>
-        <span class="skill-tag">SQL</span>
-        <span class="skill-tag">Python</span>
-      </div>
-    </div>
-    
-    <div class="project-item">
-      <a href="https://joncheryl.github.io/avy_svm.html" class="project-link">SVM Model</a>
-      <div class="skills">
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">Machine Learning</span>
-        <span class="skill-tag">sklearn package</span>
+    <div class="content-column">
+      <h2>National Park Service Dashboard</h2>
+
+      <div class="project-item">
+        <a href="https://nps-dashboard.onrender.com/" class="project-link">Dashboard hosted on Render</a>
+        <div class="skills">
+          <span class="skill-tag">Dash</span>
+          <span class="skill-tag">Plotly</span>
+          <span class="skill-tag">Web scraping</span>
+          <span class="skill-tag">Pandas</span>
+        </div>
       </div>
     </div>
   </div>
 
+  <hr>
+  <div class="content-columns">
+    <div class="content-column">
+      <h2>Wasatch Avalanche Data Analysis</h2>
+
+      <div class="project-item">
+        <a href="https://joncheryl.github.io/prelim_study.html" class="project-link">Preliminary Study</a>
+        <div class="skills">
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Python</span>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <a href="https://joncheryl.github.io/avy_svm.html" class="project-link">SVM Model</a>
+        <div class="skills">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">sklearn package</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 </body>
+
 </html>
