@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2nd Annual John Ski Party / Friendsgiving</title>
+
+  <!-- Fun 80s Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Nunito", sans-serif;
+      background: linear-gradient(135deg, #ff00cc 0%, #3333ff 100%);
+      color: #f4f4f4;
+      line-height: 1.5;
+      background-attachment: fixed;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #ff00cc, #3333ff);
+      border-bottom: 4px solid #fff;
+    }
+
+    h1 {
+      font-family: "Bungee", cursive;
+      color: #fff;
+      font-size: clamp(1.8rem, 6vw, 3rem);
+      margin-top: 20px;
+      text-shadow: 0 0 8px #000;
+    }
+
+    .hero-img img.hero-photo {
+  width: 100%;
+      max-width: 800px;
+      height: 500px;
+      object-fit: cover;   /* fills the box without distortion */
+      border-radius: 60px;  /* optional, looks nice */
+      margin: 0 auto 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 1.2rem;
+      backdrop-filter: blur(3px);
+}
+
+    /* Frosted-glass content tiles */
+    .section {
+      max-width: 800px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.13);
+      padding: 25px;
+      border-radius: 12px;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      box-shadow: 
+        0 8px 20px rgba(0,0,0,0.25),
+        0 0 12px rgba(255,255,255,0.18);
+      backdrop-filter: blur(8px);
+    }
+
+    h2 {
+      font-family: "Bungee", cursive;
+      text-align: center;
+      color: #00eaff;
+      text-shadow: 0 0 8px #000;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #f4f4f4;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+
+    .info-section {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    /* Ski divider */
+    .divider {
+      text-align: center;
+      margin: 25px 0;
+      opacity: 0.9;
+    }
+
+    .divider::before {
+      content: "🎿🎿🎿";
+      font-size: 1.4rem;
+      letter-spacing: 10px;
+    }
+
+    /* Event list */
+    .event-item {
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      font-size: 1.15rem;
+    }
+
+    .event-item:last-child {
+      border-bottom: none;
+    }
+
+    .time {
+      font-weight: 700;
+      color: #ff66ff;
+    }
+
+    /* Menu table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 1.05rem;
+    }
+
+    th, td {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 10px;
+    }
+
+    th {
+      background: rgba(255, 0, 204, 0.5);
+      font-weight: bold;
+      color: white;
+      font-family: "Bungee", cursive;
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 600px) {
+      .section {
+        margin: 20px 10px;
+        padding: 18px;
+      }
+
+      .event-item {
+        font-size: 1.05rem;
+      }
+
+      table {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero-img">
+      <img src="ski_pics/PXL_20241124_230053486.jpg" alt="Party Photo" class="hero-photo">
+    </div>
+    <h1>2nd Annual John Ski Party / Friendsgiving</h1>
+  </header>
+
+  <div class="section info-section">
+    <p><strong>Location:</strong> 838 S Blair St, SLC, UT 84111</p>
+    <p><strong>Time:</strong> Planning to eat around 6pm</p>
+    <p><strong>Theme:</strong> This will be more for people that like to tour/backcountry ski but... whatever. Come if you like snow :)</p>
+    <p><strong>Extra:</strong> Bring your beacon if you wanna play a game with beacons. Bring your skis/skins/wax/iron/etc if you want to tune with friends. Will have some tuning stations setup.</p>
+  </div>
+
+  <!-- <div class="divider"></div> -->
+
+    <div class="hero-img">
+      <img src="ski_pics/PXL_20250607_151424348.jpg" alt="Party Photo" class="hero-photo">
+    </div>
+
+  <!-- ORDER OF EVENTS -->
+  <div class="section">
+    <h2>Approximate Order of Events</h2>
+
+    <div class="event-item">
+      <span class="time">6:00pm –</span> Dinner and revelry
+    </div>
+
+    <div class="event-item">
+      <span class="time">7:00pm –</span>
+      Topographic map game and beacon game  
+      (there will be prizes!!! (nothing crazy (you know how cheap I am)))
+    </div>
+
+    <div class="event-item">
+      <span class="time">7:30pm –</span>
+      Ski and skin tuning / gear jabber / prayers to Ullr / etc
+    </div>
+
+    <div class="event-item">
+      <span class="time">11:59pm –</span> I'll probably go to bed.
+    </div>
+  </div>
+
+  <!-- <div class="divider"></div> -->
+    <div class="hero-img">
+      <img src="ski_pics/PXL_20230429_154227274.jpg" alt="Party Photo" class="hero-photo">
+    </div>
+
+  <!-- DINNER MENU -->
+  <div class="section">
+    <h2>Dinner Menu</h2>
+    <div class="subtitle">
+      THIS COULD BE YOU!!! Shoot me a text, 406-539-4170, of what you plan to bring.  
+      Beer is cool but last year we had not enough non-beer food.
+    </div>
+
+    <table>
+      <tr>
+        <th>Food</th>
+        <th>Person</th>
+      </tr>
+      <tr>
+        <td>Turkey</td>
+        <td>John</td>
+      </tr>
+      <tr>
+        <td>Sweet Potato Pie</td>
+        <td>John</td>
+      </tr>
+      <tr>
+        <td>Jalapenyo Poppppppperz</td>
+        <td>Ang's new friend</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
