@@ -36,12 +36,21 @@
       text-shadow: 0 0 8px #000;
     }
 
-    .hero-img img.hero-photo {
+.hero-img img.hero-photo {
+  width: 100%;
+  max-width: 800px;
+  height: auto;          /* height scales proportionally */
+  border-radius: 60px;   /* keeps the rounded corners */
+  margin: 0 auto 25px;
+  display: block;        /* proper block display for images */
+  object-fit: cover;     /* optional; not critical with height:auto */
+}
+    /* .hero-img img.hero-photo {
   width: 100%;
       max-width: 800px;
       height: 500px;
-      object-fit: cover;   /* fills the box without distortion */
-      border-radius: 60px;  /* optional, looks nice */
+      object-fit: cover;
+      border-radius: 60px;
       margin: 0 auto 25px;
       display: flex;
       justify-content: center;
@@ -49,7 +58,7 @@
       color: #fff;
       font-size: 1.2rem;
       backdrop-filter: blur(3px);
-}
+} */
 
     /* Frosted-glass content tiles */
     .section {
